@@ -60,6 +60,11 @@ text-align: right;
 color: black;
 font-size: 20px;
 }
+.pPTP {
+text-align: right;
+color: black;
+font-size: 14px;
+}
 a {
 font-size: 20px;
 color: red;
@@ -90,11 +95,10 @@ border: none;
 border-radius: 8px;
 }
 .navbar-nav .nav-link {
-      text-align: right;
-    }
-    
-    .dropdown-menu {
-      text-align: right;
+text-align: right;
+} 
+.dropdown-menu {
+text-align: right;
 }
 .logo {
 position: fixed;
@@ -108,14 +112,12 @@ background-image: url('PTP.png');
 z-index: 9999; 
 }
 .navbar-brand {
-  margin-left: auto;
-  margin-right: 5px;
+margin-left: auto;
+margin-right: 5px;
 }
-
 .navbar {
 background-color: #333; 
-}
-      
+}    
 .dropdown-menu {
 background-color: #333; 
 }
@@ -148,13 +150,12 @@ margin: 0;
 color:whitesmoke;
 }
 .panel {
-            display: none;
-            background-color: #f8f9fa;
-            padding: 20px;
-            margin-top: 10px;
-            border: 1px solid #ddd;
-        
-        }
+display: none;
+background-color: #f8f9fa;
+padding: 20px;
+margin-top: 10px;
+border: 1px solid #333;
+}
 </style>
 </head>
 <body>
@@ -196,8 +197,6 @@ color:whitesmoke;
     </nav>
 </header>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- 
-
 <div class="container">
     <div id="panel1" class="panel">
         <h3>المدرسة الشرعية</h3>
@@ -211,10 +210,10 @@ color:whitesmoke;
         <a href="https://www.facebook.com/DirectorateofEducationQalqilia?locale=ar_AR" style="color: blue;">فيسبوك</a>
     </div>
     <div id="panel3" class="panel">
-        <h4>م. صفاء جعيدي</h3>
-        <p>معلمة التكنولوجيا والبرمجة في مدرسة إناث قلقيلية الشرعية </p>
-        <h4>أ. ختام عيد</h3>
-        <p>مشرفة مبحث التكنولوجيا في مديرية التربية والتعليم/قلقيلية</p>
+        <h3>م. صفاء جعيدي</h3>
+        <p class="pPTP ">معلمة التكنولوجيا والبرمجة في مدرسة إناث قلقيلية الشرعية </p>
+        <h3>أ. ختام عيد</h3>
+        <p class="pPTP ">مشرفة مبحث التكنولوجيا في مديرية التربية والتعليم/قلقيلية</p>
         <a href="https://drive.google.com/file/d/1cyIWEL9rmAYJfCggWMLTBFbWoOTAxwhP/view?usp=sharing" style="color:green">نشير إليها</a>
     </div>
 <a href="PTp.pdf" id="PTpLink">نشير إليها والبقية عليك</a>
@@ -226,7 +225,6 @@ color:whitesmoke;
 <button class="buttonqtp" onclick="openLink1()">ملف الوصول السريع</button>
 </div>
 </div>
-
 <div class="footer container-fluid">
     <div class="btn-group w-100" role="group">
         <button type="button" class="btn footer-link w-100" data-target="#panel1">المدرسة الشرعية</button>
@@ -234,8 +232,6 @@ color:whitesmoke;
         <button type="button" class="btn footer-link w-100" data-target="#panel3">المعلمة والمشرفة</button>
     </div>
 </div>
-
-
 <script>
     /* JS */
     document.getElementById
@@ -273,7 +269,6 @@ color:whitesmoke;
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js">
     </script>
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script>
