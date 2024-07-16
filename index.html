@@ -245,7 +245,7 @@ margin: 0 5px;
 <img id="PTpImage" src="Palestine.png" alt="النسر">
 <div class="button-container">
 <button id="PTpButton" class="buttonqtp">إخفاء/إظهار النسر</button>
-<button class="buttonqtp" onclick="openLink()">قواعد بيانات فايربيس</button>
+<button class="buttonqtp" onclick="openLink()">تطبيق ويب/فايربيس</button>
 <button class="buttonqtp" onclick="openLink1()">ملف الوصول السريع</button>
 </div>
 </div>
@@ -296,14 +296,18 @@ margin: 0 5px;
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script>
-    $(document).ready(function() {
-        $('.footer-link').click(function(e) {
-            e.preventDefault();
-            var target = $(this).data('target');
+   $(document).ready(function() {
+    $('.footer-link').click(function(e) {
+        e.preventDefault();
+        var target = $(this).data('target');
+        if ($(target).is(':visible')) {
+            $(target).hide();
+        } else {
             $('.panel').hide();
             $(target).show();
-        });
+        }
     });
+});
 </script>
 </body>
 </html>
