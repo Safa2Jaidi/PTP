@@ -45,6 +45,7 @@ border-right: none;
 .btn-group .btn:hover {
 background-color: whitesmoke;
 color: #333;
+transition: background-color 1s, color 0.3s;
 }
 .container {
 font-family: "Cairo", sans-serif;
@@ -59,7 +60,7 @@ text-align: center;
 display: flex;
 flex-direction: column;
 gap: 10px;
-margin-bottom: 200px;
+margin-bottom: 100px;
 }
 p {
 text-align: right;
@@ -95,6 +96,12 @@ background-color: #333;
 color: whitesmoke;
 border: none;
 border-radius: 8px;
+}
+.buttonqtp:hover {
+background-color: whitesmoke;
+color: #333 !important;
+border: 1px solid #333; 
+transition: background-color 1s, color 0.3s;
 }
 .navbar-nav .nav-link {
 text-align: right;
@@ -147,6 +154,7 @@ font-size: medium;
 .dropdown-item:hover {
 background-color: #333;
 color: whitesmoke !important; 
+transition: background-color 1s, color 0.3s;
 }
 .navbar-toggler{
 margin-left: auto;
@@ -247,6 +255,7 @@ margin: 0 5px;
 <button id="PTpButton" class="buttonqtp">إخفاء/إظهار النسر</button>
 <button class="buttonqtp" onclick="openLink()">تطبيق ويب/فايربيس</button>
 <button class="buttonqtp" onclick="openLink1()">ملف الوصول السريع</button>
+<button class="buttonqtp" onclick="openLink2()">مقاطع برمجية للتجربة</button>
 </div>
 </div>
 <div class="footer container-fluid">
@@ -267,7 +276,7 @@ margin: 0 5px;
     const link = document.getElementById('PTpLink');
     link.addEventListener('click', (event) => {
     event.preventDefault();
-    alert('ملف متجدد يومياً على نفس الرابط');
+    alert('الملفات المشار إليها هنا متجددة على نفس الرابط');
     window.location.href = link.href;});
     
     document.getElementById
@@ -289,6 +298,10 @@ margin: 0 5px;
 
         function openLink1() {
             window.open('https://drive.google.com/file/d/12l3FwBkEsHEt0S6yybuTJ8wrKpVYhW1X/view?usp=sharing', '_blank', 'noopener,noreferrer');
+        }
+
+        function openLink2() {
+            window.open('https://drive.google.com/file/d/1x-Y8WUHMdxEIMJFh2gHzDqEn0HhLP2O9/view?usp=sharing', '_blank', 'noopener,noreferrer');
         }
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js">
