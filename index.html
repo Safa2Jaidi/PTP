@@ -189,6 +189,26 @@ display: inline;
 white-space: nowrap;
 margin: 0 5px; 
 }
+.responsive-img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+        .fullsize-img {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 3166px;
+            height: 3642px;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .fullsize-img img {
+            max-width: 3166px;
+            max-height: 3642px;
+        }
 </style>
 </head>
 <body>
@@ -246,9 +266,7 @@ margin: 0 5px;
         <p class="arabic-text">معلمة (التكنولوجيا والبرمجة) في مدرسة إناث قلقيلية الشرعية.</p>
         <h3>أ. ختام عيد</h3>
         <p class="arabic-text">مشرفة مبحث التكنولوجيا في مديرية التربية والتعليم/قلقيلية/فلسطين.</p>
-        <a class="links" href="https://www.youtube.com/watch?v=JO0rGPspwYw" style="color: red;">م. صفاء جعيدي</a>
-        <span class="separator">|</span>
-        <a class="links" href="https://www.facebook.com/permalink.php?story_fbid=pfbid02wSbjzADqmXLavy2Hz25Zh5DA34DvHjAVd3kPoHfRChbbVAQcV3Xgo6dCow8MPDXl&id=100004724551529&locale=ar_AR" style="color: blue;">أ. ختام عيد</a>
+        <a href="https://drive.google.com/file/d/1cyIWEL9rmAYJfCggWMLTBFbWoOTAxwhP/view?usp=sharing" style="color: green;">نشير إليها</a>
     </div>
 <a href="https://drive.google.com/file/d/1uQ84gUlQFhHxBDdUIWcxcgzcBJS2KYQv/view?usp=sharing" id="PTpLink">نشير إليها والبقية عليك</a>
 <p id="Paragraph">أهلاً ومرحباً بك</p>
@@ -259,6 +277,10 @@ margin: 0 5px;
 <button class="buttonqtp" onclick="openLink1()">ملف الوصول السريع</button>
 <button class="buttonqtp" onclick="openLink2()">مقاطع برمجية للتجربة</button>
 </div>
+<img src="Welcome.png" alt="مصغرة نشير إليها" class="responsive-img" onclick="showFullSizeImage()">
+    <div class="fullsize-img" id="fullsizeImg" onclick="hideFullSizeImage()">
+        <img src="Welcome.png" alt="إعلان نشير إليها">
+    </div>
 </div>
 <div class="footer container-fluid">
     <div class="btn-group w-100" role="group">
@@ -323,6 +345,15 @@ margin: 0 5px;
         }
     });
 });
+</script>
+<script>
+    function showFullSizeImage() {
+        document.getElementById('fullsizeImg').style.display = 'flex';
+    }
+
+    function hideFullSizeImage() {
+        document.getElementById('fullsizeImg').style.display = 'none';
+    }
 </script>
 </body>
 </html>
